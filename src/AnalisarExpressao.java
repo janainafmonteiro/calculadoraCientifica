@@ -12,24 +12,9 @@ public class AnalisarExpressao {
     public String verificar(){
         verificarRaiz();
         valorVariaveis();
-        parenteses();
         return this.expressao;
     }
 
-    public void parenteses(){
-        for (int i = 0; i < expressao.length(); i++) {           
-            if(expressao.charAt(i)== '('){
-                if(i > 0){
-                    char a = expressao.charAt(i-1);
-                if(a >= '0' && a<='9' || a >= 'a' && a <= 'z' || a == ')'){
-                    this.expressao = expressao.substring(0, i) + '*' + expressao.substring(i);
-                    i++;
-                }
-                }
-                
-            }
-        }
-    }
     public boolean verificarRaiz(){
         for(int i = 0; i < expressao.length(); i++){
             if(expressao.charAt(i) == '#'){
@@ -49,9 +34,7 @@ public class AnalisarExpressao {
         }
         return true;
     }
-
-
-    
+   
     public String verificarVariaveis(){
         int i = 0;
         while(i < expressao.length()){
