@@ -69,7 +69,7 @@ public class AnalisarExpressao {
             if(expressao.charAt(i) >= 'a' && expressao.charAt(i) <= 'z' && expressao.charAt(i) != 'i'){              
                 System.err.println("Qual sera o valor da variavel: "+ expressao.charAt(i) + " ?");
                 Scanner scan = new Scanner(System.in);
-                double valor = scan.nextDouble();            
+                String valor = scan.nextLine();            
                 this.expressao = expressao.replaceAll(String.valueOf(expressao.charAt(i)), String.valueOf(valor));
                 i++;
             }
