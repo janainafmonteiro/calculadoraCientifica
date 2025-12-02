@@ -65,6 +65,7 @@ public class App {
                 break;
             default:
                 System.out.println("Saindo...");
+                op =3;
             }
         }      
     }
