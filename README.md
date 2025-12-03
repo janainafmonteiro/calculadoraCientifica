@@ -24,8 +24,8 @@ O menu principal oferece as seguintes opções de interação:
 
 A calculadora reconhece as seguintes notações para operações complexas:
 
-| Símbolo | Operação | Descrição |
-| :---: | :--- | :--- |
+| Símbolo | Operação | Descrição | Exemplo |
+| :---: | :--- | :--- | :--- |
 | `~` | Conjugado | Inverte o sinal da parte imaginária. | `~(2+3i)` |
 | `#` | Raiz Quadrada | Calcula a raiz quadrada do número complexo. | `#a` |
 | `^` | Potência | Eleva um número complexo a uma potência. | `2^a` |
